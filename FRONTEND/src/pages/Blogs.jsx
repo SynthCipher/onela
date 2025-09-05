@@ -46,6 +46,10 @@ export default function Blogs() {
     return minutes <= 1 ? "1 minute read" : `${minutes} minutes read`;
   };
 
+  useEffect(() => {
+    document.title = "Oneła - Blogs";
+  }, []); // The empty dependency array ensures this runs only once, on mount
+
   return (
     <div className="min-h-screen bg-white pt-24 py-12 px-4">
       <div className="container mx-auto max-w-5xl">
@@ -78,11 +82,10 @@ export default function Blogs() {
               <button
                 key={cat}
                 onClick={() => setCategory(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                  category === cat
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${category === cat
                     ? "bg-blue-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -195,9 +198,8 @@ export default function Blogs() {
                       {expandedPost === post.id ? "Show less" : "Read more"}
                       <ChevronRight
                         size={16}
-                        className={`ml-1 transition-transform ${
-                          expandedPost === post.id ? "rotate-90" : ""
-                        }`}
+                        className={`ml-1 transition-transform ${expandedPost === post.id ? "rotate-90" : ""
+                          }`}
                       />
                     </button>
                   </div>

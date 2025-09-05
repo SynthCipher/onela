@@ -12,6 +12,9 @@ import { useNavigate } from "react-router-dom";
 import { projects } from "../assets/assets"; // Import projects from assets file
 import Footer from "../components/Footer";
 
+// Use useEffect to set the document title when the component mounts
+
+
 export default function Projects() {
   const navigate = useNavigate();
   const [filter, setFilter] = useState("All");
@@ -44,6 +47,10 @@ export default function Projects() {
     return () => clearTimeout(timer);
   }, [filteredProjects]);
 
+  useEffect(() => {
+    document.title = "Oneła - Projects";
+  }, []); // The empty dependency array ensures this runs only once, on mount
+
   return (
     <>
       <div className="min-h-screen  bg-gray-50 pt-24 py-12 px-4">
@@ -68,11 +75,10 @@ export default function Projects() {
                 <button
                   key={category}
                   onClick={() => setFilter(category)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                    filter === category
-                      ? "bg-gray-800 text-white"
-                      : "bg-white text-gray-700 hover:bg-gray-100"
-                  }`}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${filter === category
+                    ? "bg-gray-800 text-white"
+                    : "bg-white text-gray-700 hover:bg-gray-100"
+                    }`}
                 >
                   {category}
                 </button>
@@ -93,7 +99,7 @@ export default function Projects() {
           {/* Projects Grid */}
           {filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {animatedProjects.slice(0,5).map((project, index) => (
+              {animatedProjects.slice(0, 5).map((project, index) => (
                 <div
                   key={project.id}
                   className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 opacity-0 animate-fadeIn"

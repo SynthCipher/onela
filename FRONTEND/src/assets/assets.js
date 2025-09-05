@@ -1,11 +1,12 @@
 import myImage1 from "./my1.JPG";
 import myImage2 from "./my2.jpg";
 // import logo from "./logo.png";
-import logo from "./onela.png";
+import logo from "./Onela.png";
 import chosnor from "./WhatsApp Image 2025-09-05 at 17.29.59_4222c57b.jpg";
 import tundup from "./WhatsApp Image 2025-09-05 at 17.33.40_6de64150.jpg";
 import gurmet from "./DSC_0171.JPG";
 import rabyang from "./rabyang.jpg";
+import snow from "./images-removebg-preview.png"
 
 import iceStupaProject from "./icesStupa.png";
 import laCrypt from "./lacrypt.png";
@@ -26,6 +27,7 @@ import zomsa from "./zomsa.png";
 import lasna from "./lasna.png";
 export const assets = {
   myImage1,
+  snow,
   logo,
   iceStupaProject,
   laCrypt,

@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from "react";
 
-import { toast } from "react-toastify";
 import { TbSql } from "react-icons/tb";
 import {
   Code,
