@@ -6,13 +6,13 @@ import transporter from "../config/nodemailer.js";
  */
 const sendContactEmail = async (req, res) => {
   try {
-    const { email, name, phone, subject, message } = req.body;
+    const { email, name, subject, message } = req.body;
 
     if (!email || !name || !phone || !subject || !message) {
       return res.status(400).json({
         success: false,
         message:
-          "Please provide all required fields: name, email, phone, subject, and message",
+          "Please provide all required fields: name, email, subject, and message",
       });
     }
     console.log(email,name,phone,subject,message)
@@ -43,7 +43,6 @@ const sendContactEmail = async (req, res) => {
       subject: `New Portfolio Contact: ${subject}`,
       html: CONTACT_OWNER_NOTIFICATION_TEMPLATE.replace(/{{name}}/g, name)
         .replace(/{{email}}/g, email)
-        .replace(/{{phone}}/g, phone)
         .replace(/{{subject}}/g, subject)
         .replace(/{{message}}/g, message)
         .replace(/{{date}}/g, currentDate),

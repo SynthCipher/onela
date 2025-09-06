@@ -163,21 +163,22 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-700">
+                                    <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-700">
                                         Phone Number
                                     </label>
                                     <input
                                         type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        value={formData.phone}
+                                        id="subject"
+                                        name="subject"
+                                        value={formData.subject}
                                         onChange={handleChange}
                                         className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-800 text-gray-800"
                                         placeholder="Your phone number"
                                         required
                                     />
-
                                 </div>
+
+
                             </div>
 
                             {/* Email */}
@@ -197,21 +198,7 @@ const Contact = () => {
                                 />
                             </div>
 
-                            <div className="mb-6">
-                                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-700">
-                                    Subject
-                                </label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
-                                    className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-800 text-gray-800"
-                                    placeholder="Subject"
-                                    required
-                                />
-                            </div>
+
                             <div className="mb-6">
                                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">
                                     Message

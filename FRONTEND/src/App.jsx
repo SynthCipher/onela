@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Blogs from "./pages/Blogs";
 import { Analytics } from "@vercel/analytics/react"
+import { assets } from "./assets/assets";
 // import Blog from "./pages/Blog";
 
 const App = () => {
@@ -36,6 +37,26 @@ const App = () => {
         <Route path="/blog" element={<Blogs />}></Route>
         {/* <Route path="/blog/:id" element={<Blog />}></Route> */}
       </Routes>
+
+
+      <a
+        href="https://www.onela.in/"
+        className="fixed bottom-6 right-6 md:bottom-10 md:right-20 z-50"
+      >
+        <div className="relative p-[2px] rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient">
+          {/* Inner Button */}
+          <div className="flex items-center justify-center bg-white rounded-full shadow-lg p-2">
+            <img
+              src={assets.lasnaLogo}
+              alt="Lasna"
+              className="h-4 md:h-5 w-auto"
+            />
+          </div>
+        </div>
+      </a>
+
+
+
       <Footer />
       <Analytics />
     </div>

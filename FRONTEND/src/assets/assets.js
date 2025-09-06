@@ -4,9 +4,10 @@ import myImage2 from "./my2.jpg";
 import logo from "./Onela.png";
 import chosnor from "./WhatsApp Image 2025-09-05 at 17.29.59_4222c57b.jpg";
 import tundup from "./WhatsApp Image 2025-09-05 at 17.33.40_6de64150.jpg";
-import gurmet from "./DSC_0171.JPG";
+import gurmet from "./WhatsApp Image 2025-09-05 at 19.41.53_9db47b35.jpg";
 import rabyang from "./rabyang.jpg";
-import snow from "./images-removebg-preview.png"
+import snow from "./images-removebg-preview.png";
+import lasnaLogo from "./Frame 4.png"
 
 import iceStupaProject from "./icesStupa.png";
 import laCrypt from "./lacrypt.png";
@@ -40,6 +41,7 @@ export const assets = {
   chosnor,
   gurmet,
   rabyang,
+  lasnaLogo
 };
 
 // Team members data
@@ -49,7 +51,7 @@ export const teamMembers = [
     id: 1,
     name: "Stanzin Rabyang",
     role: "Frontend Developer & Founder",
-    specialization: "HTML, CSS, JavaScript, React, UI/UX Design",
+    specialization: "React, UI/UX Design",
     degree: "B.Tech Computer Engineering",
     college: "Cochin University of Science and Technology",
     image: assets.rabyang,
@@ -76,7 +78,7 @@ export const teamMembers = [
     id: 4,
     name: "Stanzin Tundup",
     role: "Mobile App Developer",
-    specialization: "Flutter, React Native, Cross-Platform App Development",
+    specialization: "Flutter, React Native",
     degree: "B.Tech Information Technology",
     college: "College of Engineering, Trivadrum",
     image: assets.tundup, // Replace with actual asset
