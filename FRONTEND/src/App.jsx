@@ -7,6 +7,8 @@ import { ToastContainer } from "react-toastify";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Blogs from "./pages/Blogs";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 import { assets } from "./assets/assets";
 // import Blog from "./pages/Blog";
 
@@ -59,6 +61,7 @@ const App = () => {
 
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 };

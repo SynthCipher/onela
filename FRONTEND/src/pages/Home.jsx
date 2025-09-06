@@ -88,10 +88,10 @@ const Home = () => {
   }, []);
 
 
-  const { backendUrl } = useContext(AppContext);
-  useEffect(() => {
-    console.log(backendUrl);
-  }, []);
+  // const { backendUrl } = useContext(AppContext);
+  // useEffect(() => {
+  //   console.log(backendUrl);
+  // }, []);
 
   // const [isSubmitting, setIsSubmitting] = useState(false);
   // const [submitMessage, setSubmitMessage] = useState("");

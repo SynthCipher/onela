@@ -95,7 +95,7 @@ const Contact = () => {
                     withCredentials: true,
                 }
             );
-            console.log(formData.email, formData.name, formData.phone, formData.subject, formData.message);
+            // console.log(formData.email, formData.name, formData.phone, formData.subject, formData.message);
 
             if (data.success) {
                 toast.success(data.message);
