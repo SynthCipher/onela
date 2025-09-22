@@ -20,17 +20,17 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: <Github size={20} />,
-      href: "https://github.com/SynthCipher",
+      href: "https://github.com/onela-in",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin size={20} />,
-      href: "https://www.linkedin.com/in/jigmatdorjey/",
+      href: "https://www.linkedin.com/company/onela-in/",
     },
     {
       name: "Email",
       icon: <Mail size={20} />,
-      href: "mailto:onela.tech.ladakh@gmail.com",
+      href: "mailto:hello@onela.in",
     },
     {
       name: "Insta",
