@@ -18,17 +18,12 @@ const App = () => {
   const [timer, setTimer] = useState(0);
 
   useEffect(() => {
-    // Check if the current path is NOT /projects or /blog
     if (location.pathname !== "/projects" && location.pathname !== "/blog") {
-      const intervalId = setInterval(() => {
-        setTimer((prevTimer) => prevTimer + 1);
-        document.title = `Onela - One Ladakh's Software Solution Provider ${Date.now()}`;
-      }, 1000);
-
-      // Clean up the interval when the component unmounts
-      return () => clearInterval(intervalId);
+      document.title = "Onela - One Ladakh's Software Solution Provider";
     }
   }, [location.pathname]);
+
+  
   return (
     <div className="mx-4">
       <Navbar />
