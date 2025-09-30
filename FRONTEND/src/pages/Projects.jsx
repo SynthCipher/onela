@@ -48,8 +48,8 @@ export default function Projects() {
   }, [filteredProjects]);
 
   useEffect(() => {
-    document.title = "Oneła - Projects";
-  }, []); // The empty dependency array ensures this runs only once, on mount
+    document.title = "Onela Projects – Ladakh Software Development";
+  }, []);
 
   return (
     <>

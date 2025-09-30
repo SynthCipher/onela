@@ -15,15 +15,22 @@ import { assets } from "./assets/assets";
 const App = () => {
 
   const location = useLocation();
-  const [timer, setTimer] = useState(0);
+  // const [timer, setTimer] = useState(0);
 
   useEffect(() => {
     if (location.pathname !== "/projects" && location.pathname !== "/blog") {
-      document.title = "Onela - One Ladakh's Software Solution Provider";
+      document.title = "Ladakh Web Development – Onela | Local Software Experts";
     }
   }, [location.pathname]);
 
-  
+
+  // if (location.pathname !== "/projects" && location.pathname !== "/blog") {
+  //   document.title = "Ladakh Web Development – Onela | Local Software Experts";
+  // } else {
+  //   document.title = "Onela Projects & Blog | Innovation & Insights";
+  // }
+
+
   return (
     <div className="mx-4">
       <Navbar />

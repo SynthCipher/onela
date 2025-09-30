@@ -46,9 +46,9 @@ export default function Blogs() {
     return minutes <= 1 ? "1 minute read" : `${minutes} minutes read`;
   };
 
-  useEffect(() => {
-    document.title = "Oneła - Blogs";
-  }, []); // The empty dependency array ensures this runs only once, on mount
+ useEffect(() => {
+  document.title = "Onela Blogs – Tech Insights from Ladakh";
+}, []);
 
   return (
     <div className="min-h-screen bg-white pt-24 py-12 px-4">
