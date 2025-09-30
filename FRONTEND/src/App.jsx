@@ -19,16 +19,10 @@ const App = () => {
 
   useEffect(() => {
     if (location.pathname !== "/projects" && location.pathname !== "/blog") {
-      document.title = "Ladakh Web Development – Onela | Local Software Experts";
+      document.title = "Onela – Ladakh’s One-Stop Digital Solution | Web, Apps, Branding";
     }
   }, [location.pathname]);
 
-
-  // if (location.pathname !== "/projects" && location.pathname !== "/blog") {
-  //   document.title = "Ladakh Web Development – Onela | Local Software Experts";
-  // } else {
-  //   document.title = "Onela Projects & Blog | Innovation & Insights";
-  // }
 
 
   return (
@@ -78,9 +72,6 @@ const App = () => {
           </div>
         </div>
       </a>
-
-
-
 
       <Footer />
       <Analytics />
