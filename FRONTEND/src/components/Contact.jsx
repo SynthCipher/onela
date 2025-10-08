@@ -98,7 +98,7 @@ const Contact = () => {
             // console.log(formData.email, formData.name, formData.phone, formData.subject, formData.message);
 
             if (data.success) {
-                toast.success(data.message);
+                toast.success("Thanks for reaching out! We'll get back to you soon.");
                 setSubmitMessage("Thank you! Your message has been sent successfully.");
                 setFormData({
                     name: "",
